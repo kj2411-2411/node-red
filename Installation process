@@ -1,0 +1,13 @@
+# How to install node-red on raspberry pi 4 complete roadmp
+
+uname -m
+
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+sudo apt install -y nodejs
+
+sudo apt install build-essential git
+
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+sudo systemctl enable nodered.service
